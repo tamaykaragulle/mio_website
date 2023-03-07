@@ -1,0 +1,192 @@
+body{
+    background-color: #f5f4f9;
+}
+
+.services{
+    margin-top: 20vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    color: #312E3E;
+}
+
+.services button{
+    width: 60%;
+    height: 20vh;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: width .5s ease-in-out, height .5s ease-in-out;
+    border-top: 1px solid #312E3E;
+}
+
+.service-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.services button:nth-child(2){
+    border-top: none;
+}
+.services button:hover{
+    width: 62.5%;
+    height: 22vh;
+}
+
+.service-image-container{
+    height: 100%;
+    width: 15%;
+}
+
+.service-image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit : cover;
+    border-radius : 6px;
+}
+
+.service-info-container{
+    margin-left: 2rem;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.service-title-container{
+    font-family: acherus, serif;
+    font-weight: 700;
+    font-size: calc(.7vw + 10px);
+    
+}
+.service-description-container{
+    margin-top: 6px;
+    font-family: lifesavers, serif;
+    font-size : calc(.5vw + 8px);
+
+}
+
+.service-price-container{
+    width: 15%;
+    font-family: acherus, serif;
+    font-size : calc(.7vw + 12px);
+
+}
+
+.service-popup{
+    display: none;
+    position: fixed;
+    background-color : #e4e3e9;
+    height: 52.5%;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color : #312E3E;
+    border-radius : 20px;
+    border: 1px solid #312E3E;
+}
+
+.service-popup.show{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.service-popup-info{
+    height: 95%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.service-popup-title{
+    margin-left: 5%;
+    font-family: acherus, serif;
+    font-weight: 700;
+    font-size : calc(1.2vw + 16px);
+}
+.service-popup-description{
+    margin-left: 5%;
+    text-align : left;
+    font-family: lifesavers, serif;
+    font-size: calc(.7vw + 10px);
+
+}
+.service-popup-price{
+    height: 95%;
+    width: 10%;
+    font-family: acherus, serif;
+    font-size: calc(.7vw + 10px);
+}
+.service-popup-image{
+    width: 30%;
+    height: 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5%;
+}
+.service-popup img{
+    height: 90%;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+.service-popup-close-button{
+    width: 5%;
+    height: 95%;
+}
+.service-popup-close-button img{
+    height: 10%;
+    transition : filter .4s ease-in-out, height .25s ease-in-out;
+    object-fit: contain;
+}
+.service-popup-close-button img:hover{
+    filter: brightness(0) invert(1);
+    height: 10.5%;
+}
+
+.top-nav{
+    background-color: #252330;
+}
+.bottom-nav{
+    background-color : #312E3E; 
+}
+.bottom-nav a:hover, .dropdown:hover , .dropdown-content a:hover{
+    background-color: #252330;
+    border-radius: 0 0 20px 20px;
+    font-size: calc(.7vw + 4px);
+}
+
+@media screen and (max-width: 1080px){
+    .services button{
+        width: 80%;
+    }
+    .service-image-container{
+        width: 40%;
+    }
+    .services button:hover{
+        width: 85%;
+        height: 22vh;
+    }
+    .service-price-container{
+        width: 35%;
+    }
+    .service-title-container{
+        font-size: calc(1vw + 10px);
+    }
+    .service-description-container{
+        font-size: calc(1vw + 8px);
+    }
+   
+}

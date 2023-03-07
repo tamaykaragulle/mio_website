@@ -1,0 +1,185 @@
+.contact-form form{
+    height: 30%;
+}
+
+@media screen and (max-width: 1150px){
+    .contact-form form{
+        height: 100%;
+        width: 100%;
+    }
+    .contact-img{
+        display: none !important;
+    }
+    .contact-form{
+        width: 90% !important;
+        height: 100% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        padding: 1rem 2rem !important;
+    }
+    .contact-box{
+        width: 90% !important;
+        left : 50% !important;
+        transform: translateX(-50%) !important;
+        margin-top: 15rem !important;
+        height: 80vh !important;
+    }
+    .form-box{
+        height: 100% !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .row100{
+        display: flex !important;
+        height: 20%  !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        justify-content:center !important;
+        align-items: center !important;
+    }
+    .row50{
+        display: flex !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        justify-content:center !important;
+        align-items: center !important;
+        margin: 0 !important;
+        gap : 0 !important;
+    }
+    .input-box{
+        width: 80% !important;
+        margin-top : 2rem !important;
+        font-size: calc(.35vw + 16px) !important
+    }
+    .input-box input{
+        width: 100% !important;
+    }
+    .contact-box h2{
+        font-size: calc(1.25vw + 14px) !important;
+    }
+    .contact-box h3{
+        font-size: calc(1.15vw + 8px) !important;
+    }
+    .input-box input[type="submit"]{
+        font-size: calc(.75vw + 8px) !important;
+    }
+    .input-box input[type="submit"]:hover{
+        font-size :calc(.75vw + 9px) !important;
+    }
+}
+
+
+
+.contact-box{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    color: #312E3E;
+    left: 47.5%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top : 5rem;
+}
+.contact-form{
+    background-color: #FBF7FF;
+    padding: 2rem 4rem;
+    width: 50%;
+    left: 77.5%;
+    transform: translate(-50%, 50%);
+    position: absolute;
+    height: 60%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-img{
+    position: absolute;
+    width: 65%;
+    left: 35%;
+    transform: translate(-50%, 10%);
+}
+.contact-img img{
+    width: 100%;
+    object-fit : contain;
+}
+.contact-form h3{
+    font-family: acherus, serif;
+    font-weight: 700;
+    font-size: calc(1.15vw + 4px);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.contact-form h2{
+    font-weight: 300;
+    font-size: calc(1.25vw + 6px);
+    margin-bottom: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: lifesavers, serif;
+
+}
+.form-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.form-box .row50{
+    display: flex;
+    gap: 20px;
+}
+.row100{
+    height: 100%;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-top : 3.5%;
+}
+.form-box .row100 .input-box{
+    width: 100%;
+}
+
+.input-box input, .input-box textarea{
+    background-color: transparent;
+    padding: 5px 10px;
+    font-size: calc(.35vw + 12px);
+    border: none;
+    color: #312E3E;
+    font-family: lifesavers, serif;
+    border-bottom: 1px solid #312E3E;
+}
+.input-box input:focus, .input-box textarea:focus {
+    outline: none;
+}
+.input-box input::placeholder, .input-box textarea::placeholder{
+    color: #8d899f;
+}
+.input-box textarea{
+    max-height: 10vh;
+}
+
+.input-box input[type="submit"]{
+    background: #312E3E;
+    color: #FBF7FF;
+    font-size: calc(.75vw + 6px);
+    letter-spacing: 1.7px;
+    width: 100%;
+    cursor: pointer;
+    padding: 7px 0;
+    border-radius: 24px;
+    font-family: acherus, serif;
+    border: none;
+    outline: none;
+    transition: background-color .25s ease-in-out, color .3s ease-in .15s, font-size .3s ease-in .15s;
+}
+.input-box input[type="submit"]:hover{
+    background-color: #ADA9BB;
+    color: #312E3E;
+    font-size: calc(.75vw + 7px);
+}

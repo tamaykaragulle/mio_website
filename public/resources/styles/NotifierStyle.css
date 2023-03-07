@@ -1,0 +1,23 @@
+.notifier-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 50%;
+    text-align: center;
+    height: 3.8%;
+    
+}
+.notifier-text{
+    font-family: open-sans, serif;
+    font-size: calc(.4vw + 8px);
+}
+.notifier-text.red{
+    color : red;
+}
+.notifier-text.green{
+    color: lime;
+}
